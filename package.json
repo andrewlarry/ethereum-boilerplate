@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/andrewlarry/ethereum-boilerplate/issues"
   },
-  "homepage": "https://github.com/andrewlarry/ethereum-boilerplate#readme"
+  "homepage": "https://github.com/andrewlarry/ethereum-boilerplate#readme",
+  "dependencies": {
+    "solc": "0.4.24"
+  }
 }
