@@ -1,8 +1,14 @@
 const assert = require('assert');
+
+// Ganche is a node.js Ethereum client
 const ganche = require('ganache-cli');
+
+// Web3 is the JavaScript API for communicating with an Ethereum node
 const Web3 = require('web3');
 
+// A provider is a link to a running Etherem node
 const provider = ganche.provider();
+
 const web3 = new Web3(provider);
 
 const { interface, bytecode } = require('../compile');

@@ -4,6 +4,8 @@ const { compile } = require('solc');
 
 // Path to a smart contract
 const contractPath = path.resolve(__dirname, 'contracts', 'Inbox.sol');
+
+// Read the contract file and encode utf8
 const source = fs.readFileSync(contractPath, 'utf8');
 
 module.exports = compile(source, 1).contracts[':Inbox'];
